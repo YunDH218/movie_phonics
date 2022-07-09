@@ -1,0 +1,29 @@
+{
+  "name": "movie_phonics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YunDH218/movie_phonics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YunDH218/movie_phonics/issues"
+  },
+  "homepage": "https://github.com/YunDH218/movie_phonics#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "sass": "^1.53.0"
+  },
+  "staticFiles": {
+    "staticPath": "static"
+  }
+}
