@@ -18,18 +18,16 @@ body {
     .tab_wrap {
       @include center;
       @include bold_text;
-      position: fixed;
-      width: 100vw;   
+      width: 90vw;
       color: $color--black;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin: 50px 5vw 80px;
 
-      .tab {
-        &--genre {
+      .tab-- {
+        &genre {
           flex-grow: 1;
           text-align: center;
         }
-        &--search {
+        &search {
           flex-grow: 1;
           text-align: center;
         }
@@ -49,6 +47,33 @@ body {
         flex-grow: 1;
         text-align: center;
       }
+    }
+  }
+  .new-and-recommend {
+    width: 80vw;
+    margin: 20px 10vw;
+    .tab-list {
+      display: flex;
+      @include bold_text;
+      ul {
+        flex-grow: 1;
+        margin-right: 5px;
+        padding: 10px 0;
+        background-color: $color--theme3;
+        a {
+          text-decoration: none;
+          color: $color--white;
+          text-shadow: 1px 1px 2px $color--sub3;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .contents-container {
+      width: 80vw;
+      height: 300px;
+      background-color: $color--theme2;
     }
   }
 }
