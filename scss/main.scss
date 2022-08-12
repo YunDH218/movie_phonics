@@ -50,8 +50,8 @@ body {
     }
   }
   .new-and-recommend {
-    width: 80vw;
-    margin: 20px 10vw;
+    width: 90vw;
+    margin: 20px 5vw;
     .tab-list {
       display: flex;
       @include bold_text;
@@ -71,9 +71,50 @@ body {
       }
     }
     .contents-container {
-      width: 80vw;
-      height: 300px;
+      width: 90vw;
+      height: 320px;
       background-color: $color--theme2;
+      .swiper-container {
+        width: 95%;
+        margin: auto;
+        overflow: hidden;
+        .swiper-wrapper {
+          .swiper-slide {
+            width: 12.5%;
+            .art-box {
+              height: 320px;
+              @include center;
+              img {
+                width: 80%;
+                transition: .5s;
+              }
+            }
+            &:hover {
+              .art-box img {
+                width: 100%;
+              }
+            }
+          }
+          // viewport: 1440px -> slides per view: 6
+          @media (max-width: 1440px) {
+            .swiper-slide {
+              width: 16.6%;
+            }
+          }
+          // viewport: 1024px -> slides per view: 5
+          @media (max-width: 1024px) {
+            .swiper-slide {
+              width: 20%;
+            }
+          }
+          // viewport: 768px -> slides per view: 4
+          @media (max-width: 768px) {
+            .swiper-slide {
+              width: 25%;
+            }
+          }
+        }
+      }
     }
   }
 }

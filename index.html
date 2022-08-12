@@ -4,9 +4,24 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Movics" />
+  <meta property="og:title" content="Movics movie criticisms" />
+  <meta property="og:image" content="./assets/images/logo--black.png" />
+  
+  <!-- Reset css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
   <link rel="stylesheet" href="./scss/main.scss" />
-  <script src="./ts/main.ts"></script>
+  
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script defer src="./js/main.js"></script>
+
   <title>Movics</title>
 </head>
 <body>
@@ -27,7 +42,21 @@
       <ul class="tab--recommend-movies"><a href="#">추천 영화</a></ul>
     </div>
     <div class="contents-container">
-      
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="javascript:void(0)" class="art-box"><img src="./assets/loading.svg" alt="" /></a></div>
+          <div class="swiper-slide"><a href="javascript:void(0)" class="art-box"><img src="./assets/loading.svg" alt="" /></a></div>
+          <div class="swiper-slide"><a href="javascript:void(0)" class="art-box"><img src="./assets/loading.svg" alt="" /></a></div>
+          <div class="swiper-slide"><a href="javascript:void(0)" class="art-box"><img src="./assets/loading.svg" alt="" /></a></div>
+          <div class="swiper-slide"><a href="javascript:void(0)" class="art-box"><img src="./assets/loading.svg" alt="" /></a></div>
+          <div class="swiper-slide"><a href="javascript:void(0)" class="art-box"><img src="./assets/loading.svg" alt="" /></a></div>
+          <div class="swiper-slide"><a href="javascript:void(0)" class="art-box"><img src="./assets/loading.svg" alt="" /></a></div>
+          <div class="swiper-slide"><a href="javascript:void(0)" class="art-box"><img src="./assets/loading.svg" alt="" /></a></div>
+          <div class="swiper-slide"><a href="javascript:void(0)" class="art-box"><img src="./assets/loading.svg" alt="" /></a></div>
+          <div class="swiper-slide"><a href="javascript:void(0)" class="art-box"><img src="./assets/loading.svg" alt="" /></a></div>
+          <div class="swiper-slide"><a href="javascript:void(0)" class="art-box"><img src="./assets/loading.svg" alt="" /></a></div>
+        </div>
+      </div>
     </div>
 
   </section>

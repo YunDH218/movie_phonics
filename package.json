@@ -24,12 +24,18 @@
     "@babel/preset-env": "^7.18.6",
     "autoprefixer": "9.8.6",
     "parcel-bundler": "^1.12.5",
+    "parcel-plugin-static-files-copy": "^2.6.0",
     "postcss": "^8.4.14",
-    "sass": "^1.53.0",
-    "typescript": "^4.7.4"
+    "sass": "^1.53.0"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "staticFiles": {
+    "staticPath": "assets"
+  },
+  "dependencies": {
+    "swiper": "^8.3.1"
+  }
 }
