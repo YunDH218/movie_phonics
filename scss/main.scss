@@ -51,7 +51,9 @@ body {
   }
   .new-and-recommend {
     width: 90vw;
+    padding-bottom: 10px;
     margin: 20px 5vw;
+    border-bottom: 2px solid $color--sub1;
     .tab-list {
       display: flex;
       @include bold_text;
@@ -88,10 +90,28 @@ body {
                 width: 80%;
                 transition: .5s;
               }
+              .descript {
+                position: absolute;
+                max-width: 90%;
+                color: $color--white;
+                text-decoration: none;
+                line-height: 1.5;
+                @include center;
+                visibility: hidden;
+                opacity: 0;
+                transition: .5s;
+              }
             }
             &:hover {
-              .art-box img {
-                width: 100%;
+              .art-box {
+                img {
+                  width: 100%;
+                  filter: brightness(50%);
+                }
+                .descript {
+                  visibility: visible;
+                  opacity: 1;
+                }
               }
             }
           }
